@@ -63,6 +63,15 @@ class Main {
 		);
 
 		add_settings_field(
+			'theme-logo',
+			'Site logo',
+			[Field::class, 'media'],
+			'theme-options',
+			'theme-options-section',
+			['theme-options', 'theme-logo']
+		);
+
+		add_settings_field(
 			'theme-socialmedia-footer',
 			'Toon social media footer',
 			[Field::class, 'checkbox'],

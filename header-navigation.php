@@ -8,7 +8,11 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" href="<?php echo site_url();?>">
-				<img src="<?php echo get_theme_mod('site_logo');?>" alt="<?php bloginfo('name');?>">
+				<?php
+					$themeOptions = get_option('theme-options');
+					$logo = $themeOptions['theme-logo'];
+				?>
+				<?php echo wp_get_attachment_image($logo, 'full', false, ['alt' => get_bloginfo('name')]);?>
 			</a>
 		</div>
 		<div class="collapse navbar-collapse">

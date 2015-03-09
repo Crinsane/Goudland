@@ -2,7 +2,6 @@
 <?php
 	$options = get_option('theme-options');
 	$themeColor = $options['theme-color'];
-var_dump($themeColor);
 	$color = new Mexitek\PHPColors\Color($themeColor);
 ?>
 

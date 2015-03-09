@@ -1,0 +1,1 @@
+<?php the_post_thumbnail('post-featured', ['alt' => get_the_title()]);?>

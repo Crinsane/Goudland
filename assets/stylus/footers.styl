@@ -1,0 +1,110 @@
+/**
+ * Social Media Footer
+ */
+.social-media-footer
+	background #2f383d
+	border-top 1px solid white
+	border-bottom 1px solid #293136
+	height 80px
+	line-height 80px
+	& .social-media-list
+		margin 0
+		& li
+			width 80px
+			text-align center
+	& a
+		color #99abb7
+		text-decoration none
+		font-size 18px
+		text-shadow 1px 1px 1px rgba(black, .5)
+		&:hover
+			color #d5e9f8
+
+/**
+ * Site Main Footer
+ */
+.site-main-footer
+	background #2f383d
+	color #99abb7
+	border-top 1px solid #3a464d
+	& .footer-widget-wrapper
+		padding 10px 35px
+		&:first-child
+			padding-left 15px
+		&:last-child
+			padding-right 15px
+	& .footer-widget
+		margin 40px 0
+		& .widget-title
+			color #d5e9f8
+
+/**
+ * Site Footer Widgets
+ */
+.footer-widget.text-widget
+	color inherit
+	& .text-widget-image
+		margin-bottom 20px
+	& .read-more
+		text-transform uppercase
+
+.footer-widget.recent-posts-widget
+	color #8a9ca9
+	margin-top 55px
+	font-size 13px
+	& .media-list
+		margin-bottom 25px
+	& .media
+		margin 25px 0
+		& a.post-thumbnail
+			position relative
+		& a.post-thumbnail::after
+			content '\f067'
+			font-family 'FontAwesome'
+			position absolute
+			display block
+			opacity 0
+			height 55px
+			line-height 57px
+			width 55px
+			text-align center
+			background rgba(brand-info, .5)
+			color white
+			text-decoration none !important
+			top 0
+			left 0
+		& a.post-thumbnail:hover::after
+			opacity 1
+			transition opacity .2s ease-in-out
+	& .media-footer
+		display block
+		color #6d7a83
+		font-size 12px
+
+.footer-widget.tag-cloud
+	margin-top 55px
+	& ul > li a
+		background #202629
+
+.footer-widget.image-widget
+	margin-top 55px
+
+/**
+ * Site Bottom Footer
+ */
+.site-bottom-footer
+	height 50px
+	line-height 50px
+	background #202629
+	color #657179
+	& a
+		color #a8b8c3
+		text-decoration none
+		&:hover
+			color #b9cad6
+	& ul
+		margin 0
+		& li
+			padding 0 15px
+			&:last-child
+				padding-right 0

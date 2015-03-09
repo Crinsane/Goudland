@@ -1,0 +1,18 @@
+#edit-slug-box {
+    display: none;
+}
+
+#subtitlediv {
+    margin-top: 15px;
+}
+
+#subtitlewrap #subtitle {
+    background-color: #fff;
+    font-size: 1.7em;
+    height: 1.7em;
+    line-height: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 3px 8px;
+    width: 100%;
+}

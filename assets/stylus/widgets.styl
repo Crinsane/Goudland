@@ -1,0 +1,279 @@
+/**
+ * Widgets
+ */
+.widget
+	margin-bottom 45px
+
+.widget.tag-cloud
+	color inherit
+	& .widget-title
+		margin-bottom 20px
+	& ul > li
+		padding 8px 10px
+		padding 0
+		margin 8px 2px
+		& a
+			transition none
+			padding 8px 10px
+			background #e1e4e7
+			color #697782
+			text-decoration none
+			&:hover
+				background brand-info
+				color white
+
+.widget.image-widget
+	color inherit
+	& .widget-title
+		margin-bottom 20px
+	& .image-widget-items
+		margin-left -5px
+		margin-right -5px
+		overflow hidden
+	& .image-widget-item
+		padding 5px
+		& img
+			max-width 100%
+
+.widget.search-widget
+	color inherit
+	& .search-form input
+		border-right none
+	& button
+		border-color #dee6ec
+
+.widget.twitter-widget
+	color inherit
+	& .widget-title
+		margin-bottom 20px
+	& .media-heading
+		margin-top 6px
+	& .twitter-message
+		clear both
+		color #99abb7
+		margin-top 10px
+	& .twitter-meta
+		padding 8px 0
+		color #2f383d
+		border-bottom 1px solid #e1e4e7
+	& .all-tweets
+		padding 0 0 8px
+		border-bottom 1px solid #e1e4e7
+
+.widget.category-widget
+	color inherit
+	& .widget-title
+		margin-bottom 20px
+	& ul
+		list-style none
+		padding-left 20px
+		& a
+			color #99abb7
+			text-align left
+			float left
+			&:hover
+				color brand-info
+		& li
+			padding 6px 0
+			text-align right
+		& li:before
+			content '\f054'
+			font-family 'FontAwesome'
+			font-size 10px
+			margin 0 10px 0 -15px
+			color brand-info
+			text-align left
+			float left
+			position relative
+			top 2px
+		& .children
+			margin-top 5px
+
+.recent-popular-posts-widget
+	color inherit
+	& .widget-title
+		margin-bottom 20px
+	& .tab-content
+		border 1px solid #e1e4e7
+		border-top none
+		padding 15px
+	& .nav-tabs > li > a
+		border-radius 0
+		outline-style none
+	& .nav-tabs > li:not(.active) a
+		background #ecf0f2
+		box-shadow 0 -4px 0 0 #ecf0f2
+		color #9aa7af
+		&:hover
+			border-color #ecf0f2
+			color darken(#9aa7af, 10)
+	& .nav-tabs > .active > a
+	& .nav-tabs > .active > a:hover,
+	& .nav-tabs > .active > a:focus
+		border-bottom none
+		border-top none
+		box-shadow 0 -4px 0 0 #21c2f8
+	& .recent-popular-post-title a
+		color #333
+	& .recent-popular-post-meta
+		color #999
+	& .read-more
+		display none
+
+.widget.accordion-widget
+	color inherit
+	& .widget-title
+		margin-bottom 20px
+	& .panel
+		border none
+		box-shadow none
+		& .panel-heading
+			border 1px solid #e5e5e5
+			& .icon
+				width 18px
+				height 18px
+				line-height 19px
+				border-radius 9px
+				background #21c2f8
+				color white
+				text-align center
+				font-size 11px
+				&.active
+					background #2f383d
+		& .panel-body
+			border none
+			color #9aa7af
+
+.widget.slider-widget
+	width 100%
+	& .widget-title
+		margin-bottom 20px
+	& .carousel-control
+		width 16px
+		height 16px
+		line-height 16px
+		font-size 7px
+		background #2f383d
+		color white
+		top 50%
+		margin-top -8px
+		opacity 1
+		&.left
+			background-image none
+		&.right
+			background-image none
+
+.widget.social-widget
+	color inherit
+	& .widget-title
+		margin-bottom 20px
+	& .social-icons
+		color inherit
+		margin-left -16%
+		text-align center
+		& .social-icon
+			margin-bottom 10px
+			& a
+				width 40px
+				height 40px
+				line-height 40px
+				display block
+				font-size 18px
+				color #a6b3bb
+				background #ececec
+				transition none
+				&:hover
+					color white
+					background brand-info
+
+.widget.testimonial-widget
+	color inherit
+	& .widget-title
+		margin-bottom 20px
+	& .carousel-indicators
+		left 0
+		bottom -30px
+		text-align left
+		margin-left 0
+		& li
+			background-color #9aa7af
+			border none
+			border-radius 5px
+			cursor pointer
+			display inline-block
+			height 5px
+			margin 1px
+			text-indent -999px
+			width 5px
+		& .active
+			background-color brand-info
+	& .item
+		height 195px
+		padding-bottom 25px
+		& h4
+			font-size 15px
+			margin-top 20px
+			margin-bottom 0
+		& h6
+			color #9aa7af
+			margin-top 5px
+	& .bubble
+		position relative
+		padding 10px 15px
+		background #f1f1f1
+		color #9aa7af
+		font-style italic
+		&:after
+			content ''
+			position absolute
+			border-style solid
+			border-width 8px 8px 0
+			border-color #f1f1f1 transparent
+			display block
+			width 0
+			z-index 1
+			bottom -8px
+			left 35px
+
+.widget.contact-info-widget
+	color inherit
+	& .widget-title
+		margin-bottom 20px
+
+.widget.price-filter-widget
+	color inherit
+	& .widget-title
+		margin-bottom 20px
+	& .slider
+		width 93%
+		margin 0 10px
+		& .slider-track
+			background-image none
+			background-color #c0ccd3
+			& .slider-handle
+				opacity 1
+			& .slider-handle.custom::before
+				font-family 'FontAwesome'
+				content '\f111'
+				color #2f383d
+				line-height 20px
+				font-size 20px
+			& .slider-selection
+				background-image none
+				background-color #21c2f8
+	& .price-filter-widget-actions
+		margin-top 20px
+		& .price-filter-widget-price
+			text-align right
+
+.widget.color-filter-widget
+	color inherit
+	& .widget-title
+		margin-bottom 20px
+	& .color-filter
+		padding 7px
+		&.col-sm-offset-1
+			margin-left 8px
+	& .color-filter-block
+		display block
+		height 35px

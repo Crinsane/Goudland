@@ -1,0 +1,157 @@
+/**
+ * Blog Post List Page
+ */
+.blog-post
+	padding-right 50px
+	margin-bottom 50px
+	& .carousel-control
+		width 16px
+		height 16px
+		line-height 16px
+		font-size 7px
+		background #2f383d
+		color white
+		top 50%
+		margin-top -8px
+		&.left
+			background-image none
+		&.right
+			background-image none
+	& .blog-post-slider-image
+		margin-bottom 30px
+	& .blog-post-date
+		width 100px
+		height 100px
+		border-radius 50px
+		line-height 28px
+		color white
+		background brand-info
+		text-align center
+		& span
+			font-size 34px
+			padding-top 23px
+			display block
+	& .blog-post-type
+		width 50px
+		height 50px
+		border-radius 25px
+		line-height 50px
+		text-align center
+		color white
+		position relative
+		top -100px
+		left 80px
+		font-size 20px
+		background #2f383d
+	& .blog-post-header
+		color inherit
+		& .blog-title
+			font-size 20px
+			margin-bottom 18px
+			& a
+				color #2f383d
+				&:hover
+					color brand-info
+		& .blog-meta
+			color #9aa7af
+			border-top 1px solid #e5ecef
+			border-bottom 1px solid #e5ecef
+			padding 4px 0
+			margin-bottom 18px
+			& .fa
+				margin-right 7px
+			& .fa-comment-o
+				position relative
+				top -1px
+	& .blog-preview
+		color #a4b1ba
+		& .read-more
+			margin-top 18px
+
+.blog-list-page .blog-post-content
+	padding-left 40px
+
+/**
+ * Blog Single Page
+ */
+.blog-single-page
+	color inherit
+	& .blog-author
+		width 19.6667%
+	& .blog-date
+		width 22%
+	& .blog-title
+		font-size 24px
+	& .blog-content
+		font-size 14px
+		line-height 21px
+		color #a4b1ba
+	& .blog-tags
+		border-top 1px solid #e5ecef
+		border-bottom 1px solid #e5ecef
+		padding 5px 0
+		margin-top 50px
+		& p
+			margin 0
+		& a
+			color #6d7a83
+			&:hover
+				color brand-info
+	& .blog-tags-heading
+		margin 0 15px 0 10px
+	& .blog-tags-list
+		color #6d7a83
+
+.blog-share
+	padding 20px 0
+	& h4
+		display inline
+		padding-right 15px
+	& .list-inline
+		display inline
+		& li
+			padding-right 0
+			& a
+				width 30px
+				height 30px
+				line-height 28px
+				text-align center
+				border-radius 15px
+				display block
+				border 1px solid #dbdee0
+				color #6d7a83
+				transition none
+				&:hover
+					border 1px solid brand-info
+					background brand-info
+					color white
+
+.blog-single-page
+	color inherit
+	& .blog-comments
+		padding-bottom 90px
+	& .blog-comments-header
+		overflow hidden
+		margin-top 30px
+		border-top 1px double #e5ecef
+		border-bottom 1px solid #e5ecef
+		height 50px
+		line-height 48px
+		& h3
+			margin 0
+			line-height 48px
+	& .blog-comment-form-header
+		padding 40px 0 15px
+		border-bottom 1px solid #ebebeb
+	& .blog-comment-form form
+		margin 20px 0
+		& .col-md-5
+			padding 0
+		& .col-md-7
+			padding-right 0
+		& input
+			border-right 0
+	& .comment-message
+		height 156px
+	& .comment-submit
+		padding 8px 16px

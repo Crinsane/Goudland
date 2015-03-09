@@ -1,0 +1,18 @@
+{
+    "name": "robgloudemans/gloudemans",
+    "description": "Wordpress Theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rob Gloudemans",
+            "email": "Rob_Gloudemans@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Gloudemans\\": "src/Gloudemans/"
+        }
+    }
+}

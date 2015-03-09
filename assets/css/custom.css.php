@@ -1,6 +1,8 @@
 <?php header("Content-type: text/css; charset: utf-8");?>
 <?php
-	$color = new Mexitek\PHPColors\Color(get_theme_mod('theme_color'));
+	$options = get_option('theme-options');
+	$themeColor = $options['theme-color'];
+	$color = new Mexitek\PHPColors\Color($themeColor);
 ?>
 
 blockquote:before,

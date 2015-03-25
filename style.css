@@ -8,7 +8,7 @@ Version: 1.0
 License: MIT
 */
 p {
-  color: #99abb7;
+  color: #463a3e;
 }
 a {
   -webkit-transition: color 0.2s ease-in-out;
@@ -180,7 +180,7 @@ img.aligncenter {
 }
 .widget.twitter-widget .twitter-message {
   clear: both;
-  color: #99abb7;
+  color: #463a3e;
   margin-top: 10px;
 }
 .widget.twitter-widget .twitter-meta {
@@ -203,7 +203,7 @@ img.aligncenter {
   padding-left: 20px;
 }
 .widget.category-widget ul a {
-  color: #99abb7;
+  color: #463a3e;
   text-align: left;
   float: left;
 }

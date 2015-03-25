@@ -1,6 +1,8 @@
 <a name="contact-form"></a>
 
-<?php if(ContactForm::hasValidationErrors()) :?>
+<?php use Gloudemans\Theme\ContactForm;
+
+if(ContactForm::hasValidationErrors()) :?>
 	<div class="alert alert-danger">
 		<strong>Pas op!</strong> Nog niet alle velden zijn correct ingevuld.
 	</div>

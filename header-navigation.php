@@ -22,7 +22,7 @@
 					'container'       => '',
 					'echo'            => true,
 					'items_wrap'      => '<ul id="%1$s" class="nav navbar-nav navbar-right %2$s">%3$s</ul>',
-					'walker'          => new Custom_Walker_Nav_Menu()
+					'walker'          => new \Gloudemans\Theme\CustomWalkerNavMenu()
 				]);
 			?>
 		</div>

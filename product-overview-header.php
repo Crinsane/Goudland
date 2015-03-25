@@ -29,8 +29,8 @@
 	<div class="col-md-4">
 	    <span class="pull-right products-listing-type">
 	        <label>Weergeven als:</label>
-	        <button class="btn <?php echo ProductListing::getProductListingType() == 'list' ? 'btn-info' : 'btn-default';?> list"><i class="fa fa-list"></i></button>
-	        <button class="btn <?php echo ProductListing::getProductListingType() == 'grid' ? 'btn-info' : 'btn-default';?> grid"><i class="fa fa-th-large"></i></button>
+	        <button class="btn <?php echo \Gloudemans\Products\ProductListing::getProductListingType() == 'list' ? 'btn-info' : 'btn-default';?> list"><i class="fa fa-list"></i></button>
+	        <button class="btn <?php echo \Gloudemans\Products\ProductListing::getProductListingType() == 'grid' ? 'btn-info' : 'btn-default';?> grid"><i class="fa fa-th-large"></i></button>
 		    <form method="post" action="">
 			    <input type="hidden" name="listing-type" value="">
 		    </form>

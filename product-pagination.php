@@ -1,5 +1,5 @@
 <?php
-$productsLoop = ProductsLoop::getQuery();
+$productsLoop = \Gloudemans\Products\ProductsLoop::getQuery();
 
 $paged = get_query_var('paged') ? absint(get_query_var('paged')) : 1;
 
@@ -17,7 +17,9 @@ $pagination = paginate_links([
 ?>
 
 <ul class="pagination pull-right">
-	<?php foreach($pagination as $page) :?>
-		<li <?php echo strstr($page, 'current') ? 'class="active"' : '';?>><?php echo $page;?></li>
-	<?php endforeach;?>
+	<?php if($pagination) :?>
+		<?php foreach($pagination as $page) :?>
+			<li <?php echo strstr($page, 'current') ? 'class="active"' : '';?>><?php echo $page;?></li>
+		<?php endforeach;?>
+	<?php endif;?>
 </ul>

@@ -1,5 +1,6 @@
 <?php
-$slug = get_theme_mod('front_page_slideshow_slug');
+$frontPageOptions = get_option('frontpage-options');
+$slug = $frontPageOptions['slideshow-slug'];
 $slideshow = new WP_Query([
 	'post_type' => ['slide'],
 	'tax_query' => [

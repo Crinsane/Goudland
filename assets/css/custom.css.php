@@ -2,7 +2,7 @@
 <?php
 	$options = get_option('theme-options');
 	$themeColor = $options['theme-color'];
-	$color = new Mexitek\PHPColors\Color($themeColor);
+	$color = new \phpColors\Color($themeColor);
 ?>
 
 blockquote:before,

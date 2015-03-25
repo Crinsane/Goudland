@@ -1,5 +1,5 @@
 	<?php $mainOptions = get_option('theme-options');?>
-	<?php var_dump($mainOptions);?>
+
 	<?php if($mainOptions['theme-socialmedia-footer']) get_template_part('footer', 'social-media');?>
 
 	<?php if($mainOptions['theme-footer']) get_template_part('footer', 'main');?>

@@ -1,5 +1,6 @@
 <?php namespace Gloudemans\Theme\Widgets;
 
+use WP_Query;
 use WP_Widget;
 
 class Recent_Popular_Posts_Widget extends WP_Widget {

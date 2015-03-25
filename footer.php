@@ -1,6 +1,8 @@
-	<?php get_template_part('footer', 'social-media');?>
+	<?php $mainOptions = get_option('theme-options');?>
+	
+	<?php if($mainOptions['theme-socialmedia-footer']) get_template_part('footer', 'social-media');?>
 
-	<?php get_template_part('footer', 'main');?>
+	<?php if($mainOptions['theme-footer']) get_template_part('footer', 'main');?>
 
 	<?php get_template_part('footer', 'bottom');?>
 

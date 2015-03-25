@@ -1,5 +1,6 @@
 <?php namespace Gloudemans\Theme\Widgets;
 
+use WP_Query;
 use WP_Widget;
 
 class Recent_Posts_Widget extends WP_Widget {
@@ -9,11 +10,11 @@ class Recent_Posts_Widget extends WP_Widget {
 	 */
 	public function __construct()
 	{
-		$params = array(
+		$params = [
 			'name' => __('Recent Posts'),
 			'classname' => 'recent-posts-widget',
 			'description' => __( "Your site&#8217;s most recent Posts.")
-		);
+		];
 
 		parent::__construct('Recent_Posts_Widget', '', $params);
 	}

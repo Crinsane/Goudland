@@ -26,7 +26,7 @@ class ProductsLoop {
 			'paged' => $paged
 		];
 
-		if(is_tax(['product-color', 'product-category', 'product-tags']))
+		if(is_tax(['product-department', 'product-color', 'product-category', 'product-tags']))
 		{
 			$obj = get_queried_object();
 			$query['tax_query'][] = [

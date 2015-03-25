@@ -21,7 +21,7 @@ final class Field {
 	 */
 	public static function color($args)
 	{
-		self::input($args, 'color', 'color-field');
+		self::input($args, 'text', 'color-field');
 	}
 
 	/**

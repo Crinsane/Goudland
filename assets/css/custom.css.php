@@ -146,3 +146,9 @@ a:hover, a:focus {
 .navbar-nav .dropdown-submenu > .dropdown-menu {
 	border-top: 2px solid #<?php echo $color->getHex();?>;
 }
+
+.recent-popular-posts-widget .nav-tabs > .active > a,
+.recent-popular-posts-widget .nav-tabs > .active > a:hover,
+.recent-popular-posts-widget .nav-tabs > .active > a:focus {
+	box-shadow: 0 -4px 0 0 #<?php echo $color->getHex();?>;
+}

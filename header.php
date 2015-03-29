@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Design</title>
 	<?php wp_head();?>
 </head>
 <body>

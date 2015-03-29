@@ -152,3 +152,11 @@ a:hover, a:focus {
 .recent-popular-posts-widget .nav-tabs > .active > a:focus {
 	box-shadow: 0 -4px 0 0 #<?php echo $color->getHex();?>;
 }
+
+.site-top-header .site-top-header-icons li a {
+	border: 1px solid #<?php echo $color->getHex();?>;
+}
+
+.site-top-header .site-top-header-icons li a:hover {
+	border: 1px solid #<?php echo $color->darken(15);?>;
+}

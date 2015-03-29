@@ -491,6 +491,26 @@ img.aligncenter {
 .site-top-header ul li i {
   font-size: 14px;
 }
+.site-top-header .site-top-header-icons {
+  height: 41px;
+}
+.site-top-header .site-top-header-icons li a {
+  height: 20px;
+  width: 20px;
+  display: block;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.site-top-header .site-top-header-icons li a i {
+  font-size: 12px;
+  position: relative;
+  top: -11px;
+}
+.site-top-header .site-top-header-icons li a:focus {
+  outline: none;
+}
 .site-page-header {
   height: 100px;
   line-height: 100px;

@@ -18,7 +18,9 @@
 	</div>
 	<div class="col-sm-5">
 		<h4 class="product-title"><?php the_title();?> <small><?php the_terms(get_the_ID(), 'product-category');?></small></h4>
-		<h3 class="product-price">&euro; <?php echo number_format(get_post_meta(get_the_ID(), 'product-price', true), 2, ',', '.');?></h3>
+		<?php if(get_post_meta(get_the_ID(), 'product-price', true) !== '') :?>
+			<h3 class="product-price">&euro; <?php echo number_format(get_post_meta(get_the_ID(), 'product-price', true), 2, ',', '.');?></h3>
+		<?php endif;?>
 		<div class="product-description">
 			<p><?php the_excerpt();?></p>
 		</div>

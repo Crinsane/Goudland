@@ -11,7 +11,9 @@
 				<div class="product-list-content">
 					<div class="product-list-header">
 						<h3 class="product-title"><?php the_title();?></h3>
-						<h2 class="product-price">&euro; <?php echo number_format(get_post_meta(get_the_ID(), 'product-price', true), 2, ',', '.');?></h2>
+						<?php if(get_post_meta(get_the_ID(), 'product-price', true) !== '') :?>
+							<h2 class="product-price">&euro; <?php echo number_format(get_post_meta(get_the_ID(), 'product-price', true), 2, ',', '.');?></h2>
+						<?php endif;?>
 						<?php if(get_post_meta(get_the_ID(), 'product-sale', true)) :?>
 							<div class="product-badge">Sale</div>
 						<?php endif;?>

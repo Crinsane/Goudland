@@ -2,7 +2,9 @@
 <?php
 	$options = get_option('theme-options');
 	$themeColor = $options['theme-color'];
+	$footerColor = $options['theme-footer-color'];
 	$color = new \phpColors\Color($themeColor);
+	$fColor = new \phpColors\Color($footerColor);
 ?>
 
 blockquote:before,
@@ -159,4 +161,20 @@ a:hover, a:focus {
 
 .site-top-header .site-top-header-icons li a:hover {
 	border: 1px solid #<?php echo $color->darken(15);?>;
+}
+
+.panel-default > .panel-heading {
+	background: #<?php echo $fColor->lighten(25);?>;
+}
+
+.widget.accordion-widget .panel .panel-heading {
+	border: 1px solid #<?php echo $fColor->lighten(20);?>;
+}
+
+.widget.accordion-widget .panel .panel-body {
+	background: #<?php echo $fColor->lighten(15);?>;
+}
+
+.widget.accordion-widget .panel .panel-heading .icon {
+	background: #<?php echo $color->getHex();?>;
 }

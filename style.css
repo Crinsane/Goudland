@@ -645,10 +645,17 @@ img.aligncenter {
 .footer-widget.image-widget {
   margin-top: 55px;
 }
-.widget.accordion-widget .panel-body {
+.footer-widget.accordion-widget {
+  color: #fff;
+}
+.footer-widget.accordion-widget .panel-body {
   border: none;
-  color: #9aa7af;
+  color: #c2d2dc;
   padding: 15px;
+}
+.footer-widget.accordion-widget .panel-title > a,
+.footer-widget.accordion-widget .panel .panel-body {
+  color: #fff;
 }
 .site-bottom-footer {
   height: 50px;

@@ -178,3 +178,7 @@ a:hover, a:focus {
 .widget.accordion-widget .panel .panel-heading .icon {
 	background: #<?php echo $color->getHex();?>;
 }
+
+.site-main-footer {
+	background: #<?php echo $fColor->getHex();?>;
+}

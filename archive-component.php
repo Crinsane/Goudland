@@ -20,7 +20,9 @@
 
     					<div class="col-md-12">
 						    <div class="row products-container">
-						        <?php get_template_part('product', 'loop');?>
+						        <?php
+						        //get_template_part('product', 'loop');
+						        ?>
 						    </div>
     					</div>
 

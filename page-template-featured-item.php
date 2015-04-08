@@ -1,6 +1,10 @@
 <div class="featured-item">
 	<div class="container">
 
+		<?php
+
+		?>
+
 		<div class="row">
 			<div class="col-md-6">
 				<h1>Lorem ipsum dolor sit amet</h1>

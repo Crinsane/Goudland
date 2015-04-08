@@ -1,5 +1,6 @@
 <?php namespace Gloudemans\Theme\Widgets;
 
+use WP_Query;
 use WP_Widget;
 
 class Testimonial_Widget extends WP_Widget {
@@ -9,11 +10,11 @@ class Testimonial_Widget extends WP_Widget {
 	 */
 	public function __construct()
 	{
-		$params = array(
+		$params = [
 			'name' => 'Testimonials',
 			'classname' => 'testimonial-widget',
 			'description' => 'Toon testimonials in een sidebar'
-		);
+		];
 
 		parent::__construct('Testimonial_Widget', '', $params);
 	}

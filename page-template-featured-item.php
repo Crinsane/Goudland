@@ -1,21 +1,28 @@
 <div class="featured-item">
 	<div class="container">
 
-		<?php
+        <?php
+        $lastPost = new WP_Query([
+            'post_type' => ['post'],
+            'posts_per_page' => 1,
+            'orderby' => 'date',
+            'order' => 'DESC'
+        ]);
 
-		?>
+        if($lastPost->have_posts()) : while($lastPost->have_posts()) : $lastPost->the_post();?>
 
-		<div class="row">
-			<div class="col-md-6">
-				<h1>Lorem ipsum dolor sit amet</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-				<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<button class="btn btn-info">Read More</button>
-				<button class="btn btn-primary">Buy Now</button>
-			</div>
-			<div class="col-md-6">
-				<img src="http://lorempixel.com/700/300/city/6" alt="Lorem ipsum dolor" class="featured-item-image">
-			</div>
-		</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1><?php the_title(); ?></h1>
+                    <p><?php the_excerpt();?></p>
+                    <a class="btn btn-info" href="<?php the_permalink();?>">Lees meer</a>
+                </div>
+                <div class="col-md-6">
+                    <?php the_post_thumbnail('featured-item', ['alt' => get_the_title(), 'class' => 'featured-item-image']);?>
+<!--                    <img src="http://lorempixel.com/700/300/city/6" alt="Lorem ipsum dolor" class="featured-item-image">-->
+                </div>
+            </div>
+
+        <?php endwhile; endif; wp_reset_postdata();?>
 	</div>
 </div>

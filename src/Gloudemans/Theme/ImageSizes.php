@@ -7,6 +7,7 @@ class ImageSizes {
 		add_image_size('sidebar-slideshow', 263, 160, ['center', 'center']);
 		add_image_size('post-slideshow', 798, 320, ['center', 'center']);
 		add_image_size('post-featured', 798, 320, ['center', 'center']);
+        add_image_size('featured-item', 700, 300, ['center', 'center']);
 		add_image_size('sidebar-image', 81, 81, ['center', 'center']);
 		add_image_size('recent-post-thumbnail', 55, 55, ['center', 'center']);
 		add_image_size('text-widget-image', 243, 100, ['center', 'center']);

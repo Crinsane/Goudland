@@ -94,62 +94,62 @@ class Frontpage {
 			['frontpage-options', 'show-featured-item']
 		);
 
-		add_settings_field(
-			'featured-item-text',
-			'Featured item tekst',
-			[Field::class, 'editor'],
-			'frontpage-options',
-			'frontpage-options-section',
-			['frontpage-options', 'featured-item-text', [
-				'media_buttons' => false,
-				'textarea_rows' => 6
-			]]
-		);
-
-		add_settings_field(
-			'featured-item-button-1-title',
-			'Button 1 - Titel',
-			[Field::class, 'text'],
-			'frontpage-options',
-			'frontpage-options-section',
-			['frontpage-options', 'featured-item-button-1-title']
-		);
-
-		add_settings_field(
-			'featured-item-button-1-link',
-			'Button 1 - Link',
-			[Field::class, 'url'],
-			'frontpage-options',
-			'frontpage-options-section',
-			['frontpage-options', 'featured-item-button-1-link']
-		);
-
-		add_settings_field(
-			'featured-item-button-2-title',
-			'Button 2 - Titel',
-			[Field::class, 'text'],
-			'frontpage-options',
-			'frontpage-options-section',
-			['frontpage-options', 'featured-item-button-2-title']
-		);
-
-		add_settings_field(
-			'featured-item-button-2-link',
-			'Button 2 - Link',
-			[Field::class, 'url'],
-			'frontpage-options',
-			'frontpage-options-section',
-			['frontpage-options', 'featured-item-button-2-link']
-		);
-
-		add_settings_field(
-			'featured_item_image',
-			'Featured item afbeelding',
-			[Field::class, 'media'],
-			'frontpage-options',
-			'frontpage-options-section',
-			['frontpage-options', 'featured_item_image']
-		);
+//		add_settings_field(
+//			'featured-item-text',
+//			'Featured item tekst',
+//			[Field::class, 'editor'],
+//			'frontpage-options',
+//			'frontpage-options-section',
+//			['frontpage-options', 'featured-item-text', [
+//				'media_buttons' => false,
+//				'textarea_rows' => 6
+//			]]
+//		);
+//
+//		add_settings_field(
+//			'featured-item-button-1-title',
+//			'Button 1 - Titel',
+//			[Field::class, 'text'],
+//			'frontpage-options',
+//			'frontpage-options-section',
+//			['frontpage-options', 'featured-item-button-1-title']
+//		);
+//
+//		add_settings_field(
+//			'featured-item-button-1-link',
+//			'Button 1 - Link',
+//			[Field::class, 'url'],
+//			'frontpage-options',
+//			'frontpage-options-section',
+//			['frontpage-options', 'featured-item-button-1-link']
+//		);
+//
+//		add_settings_field(
+//			'featured-item-button-2-title',
+//			'Button 2 - Titel',
+//			[Field::class, 'text'],
+//			'frontpage-options',
+//			'frontpage-options-section',
+//			['frontpage-options', 'featured-item-button-2-title']
+//		);
+//
+//		add_settings_field(
+//			'featured-item-button-2-link',
+//			'Button 2 - Link',
+//			[Field::class, 'url'],
+//			'frontpage-options',
+//			'frontpage-options-section',
+//			['frontpage-options', 'featured-item-button-2-link']
+//		);
+//
+//		add_settings_field(
+//			'featured_item_image',
+//			'Featured item afbeelding',
+//			[Field::class, 'media'],
+//			'frontpage-options',
+//			'frontpage-options-section',
+//			['frontpage-options', 'featured_item_image']
+//		);
 
 		add_settings_field(
 			'show-carousel',

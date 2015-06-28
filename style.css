@@ -689,9 +689,8 @@ img.aligncenter {
   -ms-transition: none;
   transition: none;
 }
-.navbar-brand > img {
-  position: relative;
-  top: -90%;
+.navbar-brand {
+  padding: 0 !important;
 }
 .navbar .fa {
   font-size: 8px;

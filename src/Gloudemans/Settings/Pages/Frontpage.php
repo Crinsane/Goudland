@@ -160,6 +160,15 @@ class Frontpage {
 			['frontpage-options', 'show-carousel']
 		);
 
+        add_settings_field(
+            'carousel-shortcode',
+            'Carousel shortcode',
+            [Field::class, 'text'],
+            'frontpage-options',
+            'frontpage-options-section',
+            ['frontpage-options', 'carousel-shortcode']
+        );
+
 	}
 
 	/**

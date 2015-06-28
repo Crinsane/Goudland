@@ -43,6 +43,18 @@ class Frontpage {
 			['frontpage-options', 'show-slideshow']
 		);
 
+        add_settings_field(
+            'slideshow-type',
+            'Type slideshow',
+            [Field::class, 'select'],
+            'frontpage-options',
+            'frontpage-options-section',
+            ['frontpage-options', 'slideshow-type', [
+                'bootstrap' => 'Eenvoudig',
+                'revolution' => 'Revolution slider'
+            ]]
+        );
+
 		add_settings_field(
 			'slideshow-slug',
 			'Slideshow slug',

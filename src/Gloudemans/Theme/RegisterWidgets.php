@@ -12,6 +12,7 @@ class RegisterWidgets {
 		'Category_Widget',
 		'Color_Filter_Widget',
 		'Contact_Info_Widget',
+		'Featured_Bullet_Widget',
 		'Image_Widget',
 		'Price_Filter_Widget',
 		'Recent_Popular_Posts_Widget',

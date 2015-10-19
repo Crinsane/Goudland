@@ -11,6 +11,8 @@ class RegisterSidebars {
 	{
 		$this->registerSidebarBlog();
 
+		$this->registerSidebarFeaturedBullets();
+
 		$this->registerSidebarSearch();
 
 		$this->registerSidebarContact();
@@ -23,6 +25,19 @@ class RegisterSidebars {
 	protected function registerSidebarBlog()
 	{
 		$this->registerPageSidebar('Blog Sidebar', 'sidebar-blog', 'Sidebar voor de blog pagina');
+	}
+
+	protected function registerSidebarFeaturedBullets()
+	{
+		register_sidebar([
+			'name'          => 'Featured Bullets',
+			'id'            => 'sidebar-featured-bullets',
+			'description'   => 'Sidebar voor de featured bullets op de homepage',
+			'before_widget' => '<div class="col-sm-3 featured-bullet">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h5>',
+			'after-title'   => '</h5>'
+		]);
 	}
 
 	protected function registerSidebarSearch()

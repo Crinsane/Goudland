@@ -29,7 +29,7 @@ class Pages_Widget extends WP_Widget {
 	{
 		$pages = get_posts([
 			'post_type' => 'page',
-			'post_parent' => $instance['parent'],
+			'post_parent' => wp_get_post_parent_id($post->ID), //$instance['parent'],
 			'post_status' => 'publish',
 			'order' => 'asc'
 		]);

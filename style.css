@@ -807,7 +807,6 @@ img.aligncenter {
   right: auto;
 }
 .navbar-nav > li > .dropdown-menu {
-  margin-top: 1px;
   border-top: 2px solid #21c2f8;
   -webkit-border-radius: 0;
   border-radius: 0;

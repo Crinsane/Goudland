@@ -23,4 +23,6 @@
 
 <?php if($frontPageOptions['show-featured-item']) get_template_part('page-template', 'featured-item');?>
 
+<?php get_template_part('page-template', 'brands-carousel');?>
+
 <?php get_footer();?>

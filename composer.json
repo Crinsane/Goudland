@@ -10,7 +10,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "mexitek/phpcolors": "~0.3",
+        "mexitek/phpcolors": "0.3",
         "j7mbo/twitter-api-php": "dev-master"
     },
     "autoload": {

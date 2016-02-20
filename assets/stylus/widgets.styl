@@ -138,6 +138,7 @@
 				color white
 				text-align center
 				font-size 11px
+				text-indent .5px
 				&.active
 					background #2f383d
 		& .panel-body
@@ -237,8 +238,15 @@
 
 .widget.contact-info-widget
 	color inherit
+	font-size 16px
 	& .widget-title
 		margin-bottom 20px
+	& .fa
+		width 20px
+	& a
+		color #2f383d !important
+		&:hover
+			text-decoration underline
 
 .widget.price-filter-widget
 	color inherit
@@ -277,3 +285,21 @@
 	& .color-filter-block
 		display block
 		height 35px
+
+
+.child-pages-widget
+	color inherit
+	margin-bottom 5px
+	& .widget-title
+		margin-bottom 20px
+	& .child-pages
+		margin 0
+		padding 0
+	& .child-pages > li
+		background #ca0000
+		border-bottom 1px solid #a10000
+		border-top 1px solid #de0000
+		& a
+			color white
+			display block
+			padding 8px 12px

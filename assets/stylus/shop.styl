@@ -36,6 +36,27 @@
 			padding 0 15px 10px
 			color #21c2f8 !important
 
+.products-container .product > .panel-body
+	position relative
+	&::after
+		position absolute
+		display block
+		height 261px
+		width 261px
+		color white
+		line-height 261px
+		content '\f002'
+		font-family 'FontAwesome'
+		text-align center
+		font-size 36px
+		top 0
+		left 0
+		background rgba(255, 0, 0, .5)
+		opacity 0
+	&:hover::after
+		opacity 1
+		transition opacity .2s ease-in-out
+
 .products-order-by.bootstrap-select.btn-group .dropdown-menu,
 .products-per-page.bootstrap-select.btn-group .dropdown-menu
 	min-width 160px !important

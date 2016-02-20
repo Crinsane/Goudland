@@ -24,9 +24,9 @@
  * Site Main Footer
  */
 .site-main-footer
-	background #2f383d
-	color #99abb7
-	border-top 1px solid #3a464d
+	background #3d3c3c //#2f383d
+	color #b4b6b7 //#99abb7
+	border-top 1px solid #393838 //#3a464d
 	& .footer-widget-wrapper
 		padding 10px 35px
 		&:first-child
@@ -36,7 +36,10 @@
 	& .footer-widget
 		margin 40px 0
 		& .widget-title
-			color #d5e9f8
+			color #f2f2f8 //#d5e9f8
+
+.footer-widget .widget-title
+	font-size 20px
 
 /**
  * Site Footer Widgets
@@ -48,10 +51,24 @@
 	& .read-more
 		text-transform uppercase
 
+.footer-widget.contact-info-widget
+	color inherit
+	& a
+		color #b4b6b7 !important
+		&:hover
+			text-decoration underline
+
 .footer-widget.recent-posts-widget
-	color #8a9ca9
-	margin-top 55px
-	font-size 13px
+	color inherit
+	& a
+		color #b4b6b7 !important
+		&:hover
+			text-decoration underline
+
+.footer-widget.recent-posts-widget
+	color #a9a8a8 //#8a9ca9
+	margin-top 40px
+	font-size 15px
 	& .media-list
 		margin-bottom 25px
 	& .media
@@ -78,7 +95,7 @@
 			transition opacity .2s ease-in-out
 	& .media-footer
 		display block
-		color #6d7a83
+		color #828083 //#6d7a83
 		font-size 12px
 
 .footer-widget.tag-cloud
@@ -94,7 +111,7 @@
 
 .footer-widget.accordion-widget .panel-body
 	border none
-	color #c2d2dc
+	color #d9d6dc //#c2d2dc
 	padding 15px
 
 .footer-widget.accordion-widget .panel-title > a,
@@ -108,12 +125,12 @@
 	height 50px
 	line-height 50px
 	background #202629
-	color #657179
+	color #787679 //#657179
 	& a
-		color #a8b8c3
+		color #b4b6b7 //#a8b8c3
 		text-decoration none
 		&:hover
-			color #b9cad6
+			color #d3d3d6 //#b9cad6
 	& ul
 		margin 0
 		& li

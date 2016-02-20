@@ -36,7 +36,7 @@ class Featured_Bullet_Widget extends WP_Widget {
 			</div>
 			<?php echo $args['before_title'] . $instance['title'] . $args['after_title'];?>
 			<p><?php echo $instance['text'];?></p>
-			<p><a href="<?php echo $instance['link'];?>" class="read-more">Read More &rarr;</a>
+			<p><a href="<?php echo $instance['link'];?>" class="read-more"><?php echo $instance['button'];?></a>
 
 		<?php
 
@@ -90,6 +90,16 @@ class Featured_Bullet_Widget extends WP_Widget {
 					name="<?php echo $this->get_field_name('link');?>"
 					value="<?php echo (isset($instance['link'])) ? esc_attr($instance['link']) : '';?>"
 					>
+			</p>
+			<p>
+				<label for="<?php echo $this->get_field_id('button');?>"><?php _e('Button tekst');?>:</label>
+				<input
+					type="text"
+					class="widefat"
+					id="<?php echo $this->get_field_id('button');?>"
+					name="<?php echo $this->get_field_name('button');?>"
+					value="<?php echo (isset($instance['button'])) ? esc_attr($instance['button']) : '';?>"
+				>
 			</p>
 		<?php
 	}

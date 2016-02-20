@@ -50,13 +50,9 @@ class Recent_Posts_Widget extends WP_Widget {
 								</a>
 							<?php endif;?>
 							<div class="media-body">
-								<?php if( ! $instance['show_thumbnail'] || ! has_post_thumbnail()) :?>
-									<a href="<?php the_permalink();?>">
-										<?php the_title();?>
-									</a>
-								<?php else :?>
+								<a href="<?php the_permalink();?>">
 									<?php the_title();?>
-								<?php endif;?>
+								</a>
 								<?php if($instance['show_date']) :?>
 									<span class="media-footer"><?php the_time('d F Y');?></span>
 								<?php endif;?>

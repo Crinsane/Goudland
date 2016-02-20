@@ -12,6 +12,7 @@ class RegisterPostTypes {
 		'TestimonialPostType',
 		'ProductPostType',
 		'ComponentPostType',
+		'BrandPostType',
 	];
 
 	/**

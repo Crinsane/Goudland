@@ -33,9 +33,14 @@ class Text_Widget extends WP_Widget {
 	{
 		echo $args['before_widget'];
 
-		if( ! empty($instance['image']))
-			echo $args['before_title'] . $instance['title'] . $args['after_title'];
-
+		if( ! empty($instance['title'])) {
+			echo $args['before_title'];
+			echo $instance['title'];
+			if( ! empty($instance['subtitle'])) {
+				echo ' <small>'.$instance['subtitle'].'</small>';
+			}
+			echo $args['after_title'];
+		}
 		?>
 			<?php echo wp_get_attachment_image($instance['image'], 'text-widget-image', false, ['class' => 'text-widget-image']);?>
 			<?php echo ($instance['paragraphs']) ? wpautop($instance['text']) : $instance['text'];?>
@@ -67,6 +72,16 @@ class Text_Widget extends WP_Widget {
 					name="<?php echo $this->get_field_name('title');?>"
 					value="<?php echo (isset($title)) ? esc_attr($title) : '';?>"
 					>
+			</p>
+			<p>
+				<label for="<?php echo $this->get_field_id('subtitle');?>"><?php _e('Subtitel');?>:</label>
+				<input
+					type="text"
+					class="widefat"
+					id="<?php echo $this->get_field_id('subtitle');?>"
+					name="<?php echo $this->get_field_name('subtitle');?>"
+					value="<?php echo (isset($subtitle)) ? esc_attr($subtitle) : '';?>"
+				>
 			</p>
 			<p>
 				<label for="<?php echo $this->get_field_id('image');?>">Header afbeelding:</label>

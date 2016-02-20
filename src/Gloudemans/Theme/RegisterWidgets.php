@@ -14,6 +14,7 @@ class RegisterWidgets {
 		'Contact_Info_Widget',
 		'Featured_Bullet_Widget',
 		'Image_Widget',
+		'Pages_Widget',
 		'Price_Filter_Widget',
 		'Recent_Popular_Posts_Widget',
 		'Recent_Posts_Widget',

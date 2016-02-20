@@ -9,6 +9,8 @@ class RegisterSidebars {
 
 	public function registerSidebars()
 	{
+		$this->registerSidebarPage();
+
 		$this->registerSidebarBlog();
 
 		$this->registerSidebarFeaturedBullets();
@@ -20,6 +22,11 @@ class RegisterSidebars {
 		$this->registerSidebarShop();
 
 		$this->registerSidebarFooter();
+	}
+
+	protected function registerSidebarPage()
+	{
+		$this->registerPageSidebar('Pagina Sidebar', 'sidebar-page', 'Sidebar voor een algemene pagina');
 	}
 
 	protected function registerSidebarBlog()
@@ -35,8 +42,8 @@ class RegisterSidebars {
 			'description'   => 'Sidebar voor de featured bullets op de homepage',
 			'before_widget' => '<div class="col-sm-3 featured-bullet">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<h5>',
-			'after-title'   => '</h5>'
+			'before_title'  => '<h4>',
+			'after-title'   => '</h4>'
 		]);
 	}
 

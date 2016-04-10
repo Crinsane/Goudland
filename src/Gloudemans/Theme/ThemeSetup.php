@@ -30,6 +30,11 @@ class ThemeSetup {
 		new \Gloudemans\Theme\PostMetaBoxes();
 
 		/**
+		 * Add meta boxes to the employees
+		 */
+		new \Gloudemans\Theme\EmployeeMetaBoxes();
+
+		/**
 		 * Register the sidebars
 		 */
 		new \Gloudemans\Theme\RegisterSidebars();

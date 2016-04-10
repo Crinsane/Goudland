@@ -35,16 +35,18 @@ class EmployeePostType {
 
 		$args = [
 			'labels'             => $labels,
-			'public'             => true,
-			'publicly_queryable' => true,
+			'public'             => false,
+			'publicly_queryable' => false,
 			'show_ui'            => true,
 			'show_in_menu'       => true,
 			'query_var'          => true,
-			'rewrite'            => ['slug' => 'werknemers'],
+			'rewrite'            => false,
 			'capability_type'    => 'post',
-			'has_archive'        => true,
+			'has_archive'        => false,
 			'hierarchical'       => false,
 			'menu_position'      => null,
+			'exclude_from_search' => true,
+			'show_in_nav_menus'  => false,
 			'supports'           => ['title', 'thumbnail']
 		];
 

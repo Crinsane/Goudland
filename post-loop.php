@@ -15,7 +15,7 @@
 				<span><?php the_time('j');?></span>
 				<?php the_time('M Y');?>
 			</div>
-			<div class="blog-post-type">
+			<!--<div class="blog-post-type">
 				<?php if(get_post_format() == 'image') :?>
 					<i class="fa fa-file-image-o"></i>
 				<?php elseif(get_post_format() == 'gallery') :?>
@@ -27,14 +27,14 @@
 				<?php else :?>
 					<i class="fa fa-file-text-o"></i>
 				<?php endif;?>
-			</div>
+			</div>-->
 		</div>
 		<div class="col-sm-10 blog-post-content">
 			<div class="blog-post-header">
 				<h3 class="blog-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
 				<div class="col-sm-12 blog-meta">
 					<div class="row">
-						<div class="col-sm-3"><i class="fa fa-pencil-square-o fa-flip-horizontal"></i> Door <?php the_author();?></div>
+						<div class="col-sm-3"><i class="fa fa-pencil-square-o fa-flip-horizontal"></i> asfasdfsadDoor <?php the_author();?></div>
 						<div class="col-sm-3"><i class="fa fa-comment-o"></i> <a href="<?php comments_link();?>"><?php comments_number('0 reacties', '1 reactie', '% reacties');?></a></div>
 						<div class="col-sm-6"><i class="fa fa-tag fa-flip-horizontal"></i> <?php the_category(', ');?></div>
 					</div>

@@ -8,7 +8,7 @@ class EmployeePostType {
 	public function __construct()
 	{
 		$this->registerPostType();
-//		$this->registerTaxonomy();
+		$this->registerTaxonomy();
 	}
 
 	/**
@@ -59,17 +59,17 @@ class EmployeePostType {
 	protected function registerTaxonomy()
 	{
 		$labels = [
-			'name'              => 'Slideshows',
-			'singular_name'     => 'Slideshow',
-			'search_items'      => 'Zoek slideshow',
-			'all_items'         => 'Alle slideshow',
-			'parent_item'       => 'Parent slideshow',
-			'parent_item_colon' => 'Parent slideshow:',
-			'edit_item'         => 'Wijzig slideshow',
-			'update_item'       => 'Update slideshow',
-			'add_new_item'      => 'Voeg nieuwe slideshow toe',
-			'new_item_name'     => 'Nieuwe slideshow naam',
-			'menu_name'         => 'Slideshow',
+			'name'              => 'Afdelingen',
+			'singular_name'     => 'Afdeling',
+			'search_items'      => 'Zoek afdeling',
+			'all_items'         => 'Alle afdelingen',
+			'parent_item'       => 'Parent afdeling',
+			'parent_item_colon' => 'Parent afdeling:',
+			'edit_item'         => 'Wijzig afdeling',
+			'update_item'       => 'Update afdeling',
+			'add_new_item'      => 'Voeg nieuwe afdeling toe',
+			'new_item_name'     => 'Nieuwe afdeling naam',
+			'menu_name'         => 'Afdelingen',
 		];
 
 		$args = [
@@ -78,10 +78,10 @@ class EmployeePostType {
 			'show_ui'           => true,
 			'show_admin_column' => true,
 			'query_var'         => true,
-			'rewrite'           => ['slug' => 'slideshow'],
+			'rewrite'           => ['slug' => 'afdeling'],
 		];
 
-		register_taxonomy('slideshow', ['slide'], $args);
+		register_taxonomy('department', ['employee'], $args);
 	}
 
 }

@@ -47,7 +47,7 @@ class EmployeePostType {
 			'menu_position'      => null,
 			'exclude_from_search' => true,
 			'show_in_nav_menus'  => false,
-			'supports'           => ['title', 'thumbnail']
+			'supports'           => ['title', 'thumbnail', 'page-attributes']
 		];
 
 		register_post_type('employee', $args);

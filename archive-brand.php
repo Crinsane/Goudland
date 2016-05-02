@@ -21,7 +21,7 @@
 								<div class="col-md-4">
 									<div class="panel panel-default product grid">
 										<a href="<?php the_permalink();?>" class="panel-body">
-											<?php the_post_thumbnail('full', ['alt' => get_the_title(), 'style' => 'max-width: 100%;']);?>
+											<?php the_post_thumbnail('full', ['alt' => get_the_title(), 'style' => 'max-width: 100%; height: auto;']);?>
 											<h4 class="product-title"><?php the_title();?> <small><?php the_terms(get_the_ID(), 'product-group');?></small></h4>
 										</a>
 										<a href="<?php the_permalink();?>" class="panel-footer">

@@ -35,6 +35,11 @@ class ThemeSetup {
 		new \Gloudemans\Theme\EmployeeMetaBoxes();
 
 		/**
+		 * Add meta boxes to the brands
+		 */
+		new \Gloudemans\Theme\BrandMetaBoxes();
+
+		/**
 		 * Register the sidebars
 		 */
 		new \Gloudemans\Theme\RegisterSidebars();

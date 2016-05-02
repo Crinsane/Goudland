@@ -10,7 +10,7 @@ class RegisterPostTypes {
 	protected $postTypes = [
 		'SliderPostType',
 		'TestimonialPostType',
-		'ProductPostType',
+//		'ProductPostType',
 		'ComponentPostType',
 		'BrandPostType',
 		'EmployeePostType'

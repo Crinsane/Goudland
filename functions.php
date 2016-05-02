@@ -23,7 +23,7 @@ remove_action('wp_head', 'wp_generator');
 $setup = new \Gloudemans\Theme\ThemeSetup();
 $setup->theme();
 $setup->settings();
-$setup->products();
+//$setup->products();
 $setup->slideshows();
 $setup->testimonials();
 

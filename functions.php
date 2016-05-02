@@ -49,4 +49,4 @@ add_action('manage_brand_posts_custom_column', function ($column, $post_id) {
             echo get_post_meta($post_id , 'onfront' , true);
             break;
     }
-});
+}, 10, 2 );

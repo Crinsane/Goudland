@@ -34,3 +34,19 @@ add_action('admin_head', function () {
         }
 	</style>';
 });
+
+add_filter('manage_brand_posts_columns', function ($columns) {
+    return array_merge($columns, ['client' => __('Client'), 'project_date' =>__( 'Project Date')]);
+});
+
+add_action('manage_brand_posts_custom_column', function ($column, $post_id) {
+    switch ($column) {
+        case 'project_date':
+            echo get_post_meta($post_id , 'website' , true);
+            break;
+
+        case 'client':
+            echo get_post_meta($post_id , 'onfront' , true);
+            break;
+    }
+});

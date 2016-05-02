@@ -36,17 +36,30 @@ add_action('admin_head', function () {
 });
 
 add_filter('manage_brand_posts_columns', function ($columns) {
-    dd($columns);
-    return array_merge($columns, ['client' => __('Client'), 'project_date' =>__( 'Project Date')]);
+//    array(4) {
+//        ["cb"]=>
+//  string(25) "<input type="checkbox" />"
+//        ["title"]=>
+//  string(5) "Titel"
+//        ["taxonomy-group"]=>
+//  string(14) "Productgroepen"
+//        ["date"]=>
+//  string(5) "Datum"
+//
+        $front = array_slice($columns, 0, 2);
+		$end = array_slice($columns, 2);
+		$new = ['website' => 'Website', 'onfront' => 'Op voorpagina'];
+
+		return $front + $new + $end;
 });
 
 add_action('manage_brand_posts_custom_column', function ($column, $post_id) {
     switch ($column) {
-        case 'project_date':
+        case 'website':
             echo get_post_meta($post_id , 'website' , true);
             break;
 
-        case 'client':
+        case 'onfront':
             echo get_post_meta($post_id , 'onfront' , true);
             break;
     }

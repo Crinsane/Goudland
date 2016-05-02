@@ -36,16 +36,6 @@ add_action('admin_head', function () {
 });
 
 add_filter('manage_brand_posts_columns', function ($columns) {
-//    array(4) {
-//        ["cb"]=>
-//  string(25) "<input type="checkbox" />"
-//        ["title"]=>
-//  string(5) "Titel"
-//        ["taxonomy-group"]=>
-//  string(14) "Productgroepen"
-//        ["date"]=>
-//  string(5) "Datum"
-//
         $front = array_slice($columns, 0, 2);
 		$end = array_slice($columns, 2);
 		$new = ['website' => 'Website', 'onfront' => 'Op voorpagina'];
@@ -60,7 +50,7 @@ add_action('manage_brand_posts_custom_column', function ($column, $post_id) {
             break;
 
         case 'onfront':
-            echo get_post_meta($post_id , 'onfront' , true);
+            echo get_post_meta($post_id , 'onfront' , true) == 1 ? 'Ja' : '';
             break;
     }
 }, 10, 2 );

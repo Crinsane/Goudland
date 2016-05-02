@@ -18,6 +18,7 @@
 							$brands = new WP_Query([
 								'post_type' => ['brand'],
 								'posts_per_page' => -1,
+								'orderby' => 'title',
 							]);
 
 							if($brands->have_posts()) : while($brands->have_posts()) : $brands->the_post();

@@ -21,6 +21,8 @@ class RegisterSidebars {
 
 		$this->registerSidebarShop();
 
+		$this->registerSidebarBrand();
+
 		$this->registerSidebarFooter();
 	}
 
@@ -60,6 +62,11 @@ class RegisterSidebars {
 	protected function registerSidebarShop()
 	{
 		$this->registerPageSidebar('Shop Sidebar', 'sidebar-shop', 'Sidebar voor de shop pagina');
+	}
+
+	protected function registerSidebarBrand()
+	{
+		$this->registerPageSidebar('Brand Sidebar', 'sidebar-brand', 'Sidebar voor de merken pagina');
 	}
 
 	protected function registerSidebarFooter()

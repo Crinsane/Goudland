@@ -18,7 +18,7 @@
             $featured_images = $dynamic_featured_image->get_featured_images( );
             if($featured_images[0]['full']) :
     ?>
-        <a class="brands-carousel-image" href="<?php the_permalink();?>">
+        <a class="brands-carousel-image" href="<?php echo get_post_meta(get_the_ID(), 'website', true);?>">
             <?php
 
             ?>

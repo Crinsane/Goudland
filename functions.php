@@ -36,6 +36,7 @@ add_action('admin_head', function () {
 });
 
 add_filter('manage_brand_posts_columns', function ($columns) {
+    dd($columns);
     return array_merge($columns, ['client' => __('Client'), 'project_date' =>__( 'Project Date')]);
 });
 

@@ -1,4 +1,6 @@
-<?php namespace Gloudemans\Theme\PostTypes;
+<?php
+
+namespace Gloudemans\Theme\PostTypes;
 
 class BrandPostType {
 
@@ -8,7 +10,7 @@ class BrandPostType {
 	public function __construct()
 	{
 		$this->registerPostType();
-//		$this->registerTaxonomy();
+		$this->registerTaxonomy();
 	}
 
 	/**
@@ -57,17 +59,17 @@ class BrandPostType {
 	protected function registerTaxonomy()
 	{
 		$labels = [
-			'name'              => 'Slideshows',
-			'singular_name'     => 'Slideshow',
-			'search_items'      => 'Zoek slideshow',
-			'all_items'         => 'Alle slideshow',
-			'parent_item'       => 'Parent slideshow',
-			'parent_item_colon' => 'Parent slideshow:',
-			'edit_item'         => 'Wijzig slideshow',
-			'update_item'       => 'Update slideshow',
-			'add_new_item'      => 'Voeg nieuwe slideshow toe',
-			'new_item_name'     => 'Nieuwe slideshow naam',
-			'menu_name'         => 'Slideshow',
+			'name'              => 'Productgroepen',
+			'singular_name'     => 'Productgroep',
+			'search_items'      => 'Zoek productgroep',
+			'all_items'         => 'Alle productgroep',
+			'parent_item'       => 'Parent productgroep',
+			'parent_item_colon' => 'Parent productgroep:',
+			'edit_item'         => 'Wijzig productgroep',
+			'update_item'       => 'Update productgroep',
+			'add_new_item'      => 'Voeg nieuwe productgroep toe',
+			'new_item_name'     => 'Nieuwe productgroep naam',
+			'menu_name'         => 'Productgroep',
 		];
 
 		$args = [
@@ -76,10 +78,10 @@ class BrandPostType {
 			'show_ui'           => true,
 			'show_admin_column' => true,
 			'query_var'         => true,
-			'rewrite'           => ['slug' => 'slideshow'],
+			'rewrite'           => ['slug' => 'group'],
 		];
 
-		register_taxonomy('slideshow', ['slide'], $args);
+		register_taxonomy('group', ['brand'], $args);
 	}
 
 }

@@ -8,6 +8,7 @@ session_start();
 /**
  * Include libraries
  */
+require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/lib/TwitterAPIExchange.php';
 require_once __DIR__ . '/lib/color.php';
 

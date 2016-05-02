@@ -9,14 +9,10 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {
-        "mexitek/phpcolors": "0.3",
-        "j7mbo/twitter-api-php": "dev-master"
-    },
     "autoload": {
         "psr-4": {
             "Gloudemans\\": "src/Gloudemans/"
         },
-        "files": ["src/helpers.php", "vendor/bin/color.php"]
+        "files": ["src/helpers.php"]
     }
 }

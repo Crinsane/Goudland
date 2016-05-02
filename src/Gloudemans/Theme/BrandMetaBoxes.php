@@ -48,7 +48,7 @@ class BrandMetaBoxes
                         <label for="brand_onfront">Toon op voorpagina?</label>
                     </th>
                     <td>
-                        <input type="checkbox" name="brand[onfront]" id="brand_onfront" value="1" <?php checked('1', $onfront);?> class="regular-text">
+                        <input type="checkbox" name="brand[onfront]" id="brand_onfront" value="1" <?php checked('1', $onfront);?>>
                     </td>
                 </tr>
             </tbody>

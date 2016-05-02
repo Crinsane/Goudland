@@ -23,6 +23,10 @@
 										<a href="<?php echo get_post_meta(get_the_ID(), 'website', true);?>" class="panel-body">
 											<div style="height: 268px; width: 100%; background: white url('<?php the_post_thumbnail_url('full');?>') no-repeat center center; background-size: contain;"></div>
 											<h4 class="product-title" style="padding-left: 15px;"><?php the_title();?> <small><?php the_terms(get_the_ID(), 'product-group');?></small></h4>
+											<div>
+												<?php $terms = get_the_terms(get_the_ID(), 'group');?>
+												<pre><?php var_dump($terms);?></pre>
+											</div>
 										</a>
 									</div>
 								</div>

@@ -66,7 +66,7 @@ class RegisterSidebars {
 
 	protected function registerSidebarBrand()
 	{
-		$this->registerPageSidebar('Brand Sidebar', 'sidebar-brand', 'Sidebar voor de merken pagina');
+		$this->registerPageSidebar('Merken Sidebar', 'sidebar-brand', 'Sidebar voor de merken pagina');
 	}
 
 	protected function registerSidebarFooter()

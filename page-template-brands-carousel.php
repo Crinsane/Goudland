@@ -3,7 +3,14 @@
 
         $brands = new WP_Query([
             'post_type' => ['brand'],
-            'posts_per_page' => -1
+            'posts_per_page' => -1,
+            'meta_query' => array(
+                array(
+                    'key'=> 'onfront',
+                    'value' => '1',
+                    'type' => 'numeric',
+                ),
+            ),
         ]);
 
         if($brands->have_posts()) : while($brands->have_posts()) : $brands->the_post();

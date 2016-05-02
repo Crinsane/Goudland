@@ -4,6 +4,7 @@
         $brands = new WP_Query([
             'post_type' => ['brand'],
             'posts_per_page' => -1,
+            'orderby' => 'rand',
             'meta_query' => array(
                 array(
                     'key'=> 'onfront',

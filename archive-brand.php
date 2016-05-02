@@ -23,7 +23,7 @@
 										<a href="<?php echo get_post_meta(get_the_ID(), 'website', true);?>" class="panel-body">
 											<div style="height: 268px; width: 100%; background: white url('<?php the_post_thumbnail_url('full');?>') no-repeat center center; background-size: contain;"></div>
 											<h4 class="product-title" style="padding-left: 15px;"><?php the_title();?> <small><?php the_terms(get_the_ID(), 'product-group');?></small></h4>
-											<div>
+											<div style="color: #2f383d !important; padding-left: 15px; background: white;">
 												<?php
 													$terms = get_the_terms(get_the_ID(), 'group');
 													$tags = array_map(function ($term) {

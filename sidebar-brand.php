@@ -1,1 +1,1 @@
-<?php dynamic_sidebar('sidebar-shop'); ?>
+<?php dynamic_sidebar('sidebar-brand'); ?>

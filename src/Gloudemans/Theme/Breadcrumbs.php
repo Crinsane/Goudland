@@ -42,15 +42,13 @@ class Breadcrumbs {
 	{
 		global $post;
 
-		if ( ! is_front_page())
-		{
+		if ( ! is_front_page()) {
 			$this->addBreadcrumb(
 				get_the_title(get_option('page_on_front', true)),
 				get_option('home')
 			);
 
-			if (is_tax(['product-category', 'product-color', 'product-tags']))
-			{
+			if (is_tax(['product-category', 'product-color', 'product-tags'])) {
 				$this->addBreadcrumb(
 					'Producten',
 					''
@@ -62,14 +60,11 @@ class Breadcrumbs {
 				);
 			}
 
-			if (is_page())
-			{
-				if ($post->post_parent)
-				{
+			if (is_page()) {
+				if ($post->post_parent) {
 					$postParents = get_post_ancestors($post->ID);
 
-					foreach ($postParents as $parent)
-					{
+					foreach ($postParents as $parent) {
 						$this->addBreadcrumb(
 							get_the_title($parent),
 							get_permalink($parent)
@@ -80,25 +75,20 @@ class Breadcrumbs {
 				$this->addBreadcrumb(get_the_title(), '');
 			}
 
-			if (is_home())
-			{
+			if (is_home()) {
 				$this->addBreadcrumb(
 					get_the_title(get_option('page_for_posts', true)),
 					''
 				);
 			}
 
-			if (is_single())
-			{
-				if (is_singular('product'))
-				{
+			if (is_single()) {
+				if (is_singular('product')) {
 					$this->addBreadcrumb(
 						'Producten',
 						''
 					);
-				}
-				else
-				{
+				} else {
 					$this->addBreadcrumb(
 						get_the_title(get_option('page_for_posts', true)),
 						get_the_permalink(get_option('page_for_posts', true))
@@ -108,25 +98,27 @@ class Breadcrumbs {
 				$this->addBreadcrumb(get_the_title(), '');
 			}
 
-			if (is_search())
-			{
+			if (is_search()) {
 				$this->addBreadcrumb('Zoeken', '');
 			}
 
-			if (is_tag())
-			{
+			if (is_tag()) {
 				$this->addBreadcrumb(
 					single_tag_title('Tag: ', false),
 					''
 				);
 			}
 
-			if (is_category())
-			{
+			if (is_category()) {
 				$this->addBreadcrumb(
 					single_cat_title('Categorie: ', false),
 					''
 				);
+			}
+
+			if (is_post_type_archive('brand'))
+			{
+				$this->addBreadcrumb('Merken & Dealerschappen', '');
 			}
 		}
 		else

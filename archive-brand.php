@@ -29,8 +29,8 @@
 													$tags = array_map(function ($term) {
 														return $term->name;
 													}, $terms);
+													echo implode(', ', $tags);
 												?>
-												<pre><?php var_dump($tags);?></pre>
 											</div>
 										</a>
 									</div>

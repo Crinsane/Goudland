@@ -24,8 +24,13 @@
 											<div style="height: 268px; width: 100%; background: white url('<?php the_post_thumbnail_url('full');?>') no-repeat center center; background-size: contain;"></div>
 											<h4 class="product-title" style="padding-left: 15px;"><?php the_title();?> <small><?php the_terms(get_the_ID(), 'product-group');?></small></h4>
 											<div>
-												<?php $terms = get_the_terms(get_the_ID(), 'group');?>
-												<pre><?php var_dump($terms);?></pre>
+												<?php
+													$terms = get_the_terms(get_the_ID(), 'group');
+													$tags = array_map(function ($term) {
+														return $term->name;
+													}, $terms);
+												?>
+												<pre><?php var_dump($tags);?></pre>
 											</div>
 										</a>
 									</div>

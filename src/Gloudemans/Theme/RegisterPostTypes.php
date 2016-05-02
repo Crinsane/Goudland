@@ -11,7 +11,7 @@ class RegisterPostTypes {
 		'SliderPostType',
 		'TestimonialPostType',
 //		'ProductPostType',
-		'ComponentPostType',
+//		'ComponentPostType',
 		'BrandPostType',
 		'EmployeePostType'
 	];

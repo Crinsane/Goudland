@@ -24,7 +24,7 @@
 
 							if($brands->have_posts()) : while($brands->have_posts()) : $brands->the_post();
 						?>
-								<div class="col-md-4">
+								<div class="col-md-3">
 									<div class="panel panel-default product grid">
 										<a href="<?php echo get_post_meta(get_the_ID(), 'website', true);?>" class="panel-body">
 											<div style="height: 268px; width: 100%; background: white url('<?php the_post_thumbnail_url('full');?>') no-repeat center center; background-size: contain;"></div>

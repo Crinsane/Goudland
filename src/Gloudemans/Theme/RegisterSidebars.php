@@ -42,7 +42,7 @@ class RegisterSidebars {
 			'name'          => 'Featured Bullets',
 			'id'            => 'sidebar-featured-bullets',
 			'description'   => 'Sidebar voor de featured bullets op de homepage',
-			'before_widget' => '<div class="col-sm-15 featured-bullet" style="width: 20%;">',
+			'before_widget' => '<div class="col-sm-1 featured-bullet" style="width: 20%;">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h4>',
 			'after-title'   => '</h4>'

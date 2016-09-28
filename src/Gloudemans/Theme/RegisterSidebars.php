@@ -44,7 +44,7 @@ class RegisterSidebars {
 			'description'   => 'Sidebar voor de featured bullets op de homepage',
 			'before_widget' => '<div class="col-sm-5ths featured-bullet">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<h4>',
+			'before_title'  => '<h4 class="text-center">',
 			'after-title'   => '</h4>'
 		]);
 	}

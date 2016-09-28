@@ -17,11 +17,9 @@
                     <p><?php the_excerpt();?></p>
                 </div>
                 <div class="col-md-6">
-                    <?php $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'featured-item');?>
-                    <?php 
-                    //the_post_thumbnail('featured-item', ['alt' => get_the_title(), 'class' => 'featured-item-image']);
-                    ?>
-                    <img src="<?php echo $thumbnail[0];?>" alt="<?php the_title();?>" class="featured-item-image">
+                    <?php if (has_post_thumbnail()) :?>
+                        <img src="<?php the_post_thumbnail_url();?>" alt="<?php the_title();?>" class="featured-item-image">
+                    <?php endif;?>
                 </div>
             </div>
 

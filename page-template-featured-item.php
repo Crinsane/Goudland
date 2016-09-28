@@ -18,7 +18,7 @@
                 </div>
                 <div class="col-md-6">
                     <?php if (has_post_thumbnail()) :?>
-                        <img src="<?php the_post_thumbnail_url();?>" alt="<?php the_title();?>" class="featured-item-image">
+                        <img src="<?php the_post_thumbnail_url('featured-item');?>" alt="<?php the_title();?>" class="featured-item-image">
                     <?php endif;?>
                 </div>
             </div>

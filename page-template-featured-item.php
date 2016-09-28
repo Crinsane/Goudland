@@ -21,7 +21,7 @@
                     <?php 
                     //the_post_thumbnail('featured-item', ['alt' => get_the_title(), 'class' => 'featured-item-image']);
                     ?>
-                    <img src="thumbnail" alt="<?php the_title();?>" class="featured-item-image">
+                    <img src="<?php echo $thumbnail;?>" alt="<?php the_title();?>" class="featured-item-image">
                 </div>
             </div>
 

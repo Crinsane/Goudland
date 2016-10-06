@@ -15,11 +15,11 @@
                 <div class="col-md-6">
                     <h1><?php the_title(); ?></h1>
                     <p><?php the_excerpt();?></p>
-                    <a class="btn btn-info" href="<?php the_permalink();?>">Lees meer</a>
                 </div>
                 <div class="col-md-6">
-                    <?php the_post_thumbnail('featured-item', ['alt' => get_the_title(), 'class' => 'featured-item-image']);?>
-<!--                    <img src="http://lorempixel.com/700/300/city/6" alt="Lorem ipsum dolor" class="featured-item-image">-->
+                    <?php if (has_post_thumbnail()) :?>
+                        <img src="<?php the_post_thumbnail_url('featured-item');?>" alt="<?php the_title();?>" class="featured-item-image">
+                    <?php endif;?>
                 </div>
             </div>
 

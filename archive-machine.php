@@ -6,7 +6,7 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-sm-3">
-				    <?php get_sidebar('shop');?>
+				    <?php get_sidebar('page');?>
     			</div>
     			<div class="col-sm-9">
     				<div class="row">

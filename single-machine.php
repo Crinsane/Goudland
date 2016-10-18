@@ -6,7 +6,11 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-sm-3">
-				    <?php get_sidebar('page');?>
+					<div class="panel panel-default">
+						<div>
+							<?php get_sidebar('page');?>
+						</div>
+					</div>
     			</div>
     			<div class="product-details col-sm-9">
     				<?php get_template_part('machine-single');?>

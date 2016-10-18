@@ -34,6 +34,8 @@ class ThemeSetup {
 		 */
 		new \Gloudemans\Theme\EmployeeMetaBoxes();
 
+        new \Gloudemans\Machines\MachineMetaBoxes();
+
 		/**
 		 * Add meta boxes to the brands
 		 */
@@ -102,7 +104,7 @@ class ThemeSetup {
 		/**
 		 * Add meta boxes to the products
 		 */
-		new \Gloudemans\Products\ProductMetaBoxes();
+        new \Gloudemans\Products\ProductMetaBoxes();
 
 		/**
 		 * Add meta fields to the color taxonomy

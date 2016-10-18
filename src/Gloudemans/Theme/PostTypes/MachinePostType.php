@@ -35,14 +35,14 @@ class MachinePostType {
 
 		$args = [
 			'labels'             => $labels,
-			'public'             => false,
-			'publicly_queryable' => false,
+			'public'             => true,
+			'publicly_queryable' => true,
 			'show_ui'            => true,
 			'show_in_menu'       => true,
 			'query_var'          => true,
-			'rewrite'            => false,
+			'rewrite'            => ['slug' => 'machine'],
 			'capability_type'    => 'post',
-			'has_archive'        => false,
+			'has_archive'        => true,
 			'hierarchical'       => false,
 			'menu_position'      => null,
 			'exclude_from_search' => true,
@@ -78,7 +78,7 @@ class MachinePostType {
 			'show_ui'           => true,
 			'show_admin_column' => true,
 			'query_var'         => true,
-			'rewrite'           => ['slug' => 'merk'],
+			'rewrite'           => ['slug' => 'machines/merk'],
 		];
 
 		register_taxonomy('brand', ['machine'], $args);

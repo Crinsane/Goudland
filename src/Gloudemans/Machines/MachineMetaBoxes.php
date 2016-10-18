@@ -35,6 +35,7 @@ class MachineMetaBoxes {
         $color = get_post_meta($post->ID, 'basiskleur', true);
         $buildyear = get_post_meta($post->ID, 'bouwjaar', true);
         $price = get_post_meta($post->ID, 'price', true);
+        $state = get_post_meta($post->ID, 'staat_algemeen', true);
 
 		?>
 			<table class="form-table">
@@ -66,6 +67,10 @@ class MachineMetaBoxes {
                     <tr>
                         <th scope="row"><label for="machine-buildyear">Bouwjaar</label></th>
                         <td><input type="text" name="machine-buildyear" id="machine-buildyear" value="<?php echo $buildyear;?>" class="regular-text" readonly></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="machine-state">Algemene staat</label></th>
+                        <td><input type="text" name="machine-state" id="machine-state" value="<?php echo $state;?>" class="regular-text" readonly></td>
                     </tr>
 				</tbody>
 			</table>

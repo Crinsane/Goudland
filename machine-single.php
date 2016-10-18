@@ -49,7 +49,8 @@
                     <?php $price = get_post_meta(get_the_ID(), 'price', true);?>
                     Prijstype: <?php echo $price;?>
                 </li>
-			</ul>
+                <li>Algemene staat: <?php echo ucfirst(get_post_meta(get_the_ID(), 'staat_algemeen', true));?></li>
+            </ul>
 		</div>
 	</div>
 

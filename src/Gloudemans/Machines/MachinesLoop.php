@@ -24,7 +24,7 @@ class MachinesLoop
 
         $query = [
             'post_type' => ['machine'],
-            'posts_per_page' => 9,
+            'posts_per_page' => 21,
             'paged' => $paged
         ];
 

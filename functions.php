@@ -54,3 +54,67 @@ add_action('manage_brand_posts_custom_column', function ($column, $post_id) {
             break;
     }
 }, 10, 2 );
+
+/**
+ * Add the fields to REST API responses for posts read and write
+ */
+add_action( 'rest_api_init', 'slug_register_fields' );
+function slug_register_fields()
+{
+    $fields = [
+        'body',
+        'fuel',
+        'transmission',
+        'vat',
+        'basecolor',
+        'buildyear',
+        'price',
+        'condition',
+    ];
+
+    foreach ($fields as $field) {
+        register_rest_field( 'machine',
+            $field,
+            [
+                'get_callback'    => 'slug_get_meta',
+                'update_callback' => 'slug_update_meta',
+                'schema'          => null,
+            ]
+        );
+    }
+}
+/**
+ * Handler for getting custom field data.
+ *
+ * @since 0.1.0
+ *
+ * @param array $object The object from the response
+ * @param string $field_name Name of field
+ * @param WP_REST_Request $request Current request
+ *
+ * @return mixed
+ */
+function slug_get_meta( $object, $field_name, $request )
+{
+    return get_post_meta( $object[ 'id' ], $field_name );
+}
+
+/**
+ * Handler for updating custom field data.
+ *
+ * @since 0.1.0
+ *
+ * @param mixed $value The value of the field
+ * @param object $object The object from the response
+ * @param string $field_name Name of field
+ *
+ * @return bool|int
+ */
+function slug_update_meta( $value, $object, $field_name )
+{
+    if ( ! is_string( $value ) ) {
+        return;
+    }
+
+    return update_post_meta( $object->ID, $field_name, strip_tags( $value ) );
+}

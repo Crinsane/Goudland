@@ -47,7 +47,8 @@ class MachinePostType {
 			'menu_position'      => null,
 			'exclude_from_search' => true,
 			'show_in_nav_menus'  => false,
-			'supports'           => ['title', 'editor', 'thumbnail', 'excerpt', 'page-attributes']
+            'show_in_rest'       => true,
+			'supports'           => ['title', 'editor', 'thumbnail', 'excerpt', 'page-attributes', 'custom-fields'],
 		];
 
 		register_post_type('machine', $args);
@@ -79,6 +80,7 @@ class MachinePostType {
 			'show_admin_column' => true,
 			'query_var'         => true,
 			'rewrite'           => ['slug' => 'machines/merk'],
+            'show_in_rest'      => true,
 		];
 
 		register_taxonomy('brand', ['machine'], $args);
